@@ -1,17 +1,17 @@
 package ru.labs.hm1;
 
 public class DeerDecorator extends BaseDecorator {
-    public DeerDecorator (Component dish) {
-        super(dish);
+    public DeerDecorator(Component c) {
+        super(c);
     }
 
     @Override
     public String getName() {
-        return dish.getName() + " + двойная порция оленины";
+        return super.getName() + " + двойная порция оленины";
     }
 
     @Override
     public int getPrice() {
-        return dish.getPrice() + 20;
+        return super.getPrice() + 20;
     }
 }

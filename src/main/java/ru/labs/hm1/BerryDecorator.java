@@ -1,17 +1,17 @@
 package ru.labs.hm1;
 
 public class BerryDecorator extends BaseDecorator {
-    public BerryDecorator (Component dish) {
-        super(dish);
+    public BerryDecorator(Component c) {
+        super(c);
     }
 
     @Override
     public String getName() {
-        return dish.getName() + " + снежные ягоды";
+        return super.getName() + " + снежные ягоды";
     }
 
     @Override
     public int getPrice() {
-        return dish.getPrice() + 5;
+        return super.getPrice() + 5;
     }
 }

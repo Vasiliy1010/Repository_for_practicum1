@@ -1,17 +1,17 @@
 package ru.labs.hm1;
 
 public class NordBreadDecorator extends BaseDecorator {
-    public NordBreadDecorator(Component dish) {
-       super(dish);
+    public NordBreadDecorator(Component c) {
+        super(c);
     }
 
     @Override
     public String getName() {
-        return dish.getName() + " + нордская лепешка";
+        return super.getName() + " + нордская лепешка";
     }
 
     @Override
     public int getPrice() {
-        return dish.getPrice() + 7;
+        return super.getPrice() + 7;
     }
 }
