@@ -1,10 +1,8 @@
 package ru.labs.hm1;
 
-public class DeerDecorator implements BaseDecorator {
-    BaseDecorator dish;
-
-    DeerDecorator (BaseDecorator dish) {
-        this.dish = dish;
+public class DeerDecorator extends BaseDecorator {
+    public DeerDecorator (Component dish) {
+        super(dish);
     }
 
     @Override

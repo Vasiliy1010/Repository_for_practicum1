@@ -37,7 +37,7 @@ public class Main extends JFrame {
 
         JButton addOrder = new JButton("Сделать заказ");
         addOrder.addActionListener(e -> {
-            BaseDecorator dish = new BaseDishDecorator();
+            Component dish = new ConcreteComponent();
             for (JCheckBox checkBox : checkBoxes) {
                 if (checkBox.isSelected()) {
                     switch (checkBox.getText()) {

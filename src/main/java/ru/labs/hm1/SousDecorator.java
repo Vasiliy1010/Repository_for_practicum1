@@ -1,10 +1,8 @@
 package ru.labs.hm1;
 
-public class SousDecorator implements BaseDecorator {
-    BaseDecorator dish;
-
-    SousDecorator (BaseDecorator dish) {
-        this.dish = dish;
+public class SousDecorator extends BaseDecorator {
+    public SousDecorator (Component dish) {
+        super(dish);
     }
 
     @Override

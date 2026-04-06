@@ -1,6 +1,6 @@
 package ru.labs.hm1;
 
-public class BaseDishDecorator implements BaseDecorator {
+public class ConcreteComponent implements Component {
     @Override
     public String getName() {
         return "Нордское рагу";

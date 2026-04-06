@@ -1,10 +1,8 @@
 package ru.labs.hm1;
 
-public class NordBreadDecorator implements BaseDecorator {
-    BaseDecorator dish;
-
-    NordBreadDecorator(BaseDecorator dish) {
-        this.dish = dish;
+public class NordBreadDecorator extends BaseDecorator {
+    public NordBreadDecorator(Component dish) {
+       super(dish);
     }
 
     @Override
